@@ -13,7 +13,7 @@ def index():
 
 
 @app.route('/shift', methods=['POST'])
-def slow():
+def shift():
     audio = request.files['audio']
     octaves = float(request.form['octaves'])
     sound = PitchShift().from_file(audio, octaves)
