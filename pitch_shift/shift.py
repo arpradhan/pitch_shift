@@ -14,5 +14,5 @@ class PitchShift:
         sound = sound._spawn(sound.raw_data, overrides={
             'frame_rate': frame_rate,
         })
-        sound = sound.set_frame_rate(44100)
+        sound = sound.set_frame_rate(FRAME_RATE)
         return sound
