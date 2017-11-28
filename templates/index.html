@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>PitchShift</h1>
+<form action="shift" method="post" enctype="multipart/form-data">
+  <div>
+    <label for="octaves">
+      Octaves
+      <input
+        name="octaves"
+        id="octaves"
+        type="number"
+        placeholder="1.0"
+        step="0.1">
+    </label>
+  </div>
+  <div>
+    <label for="audio">
+      Audio file
+      <input
+        name="audio"
+        id="audio"
+        type="file"
+        id="audio">
+    </label>
+  </div>
+  <div>
+    <input type="submit" value="Submit">
+  </div>
+</form>
+{% endblock %}
